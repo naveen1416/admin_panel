@@ -9,8 +9,8 @@ if(!isset($_SESSION['user']))
 $res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
 $userRow=mysql_fetch_array($res);
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Welcome - <?php echo $userRow['user_email']; ?></title>
@@ -19,7 +19,7 @@ $userRow=mysql_fetch_array($res);
 <body>
 <div id="header">
 	<div id="left">
-    <label>Coding Cage</label>
+    <label>Dashboard</label>
     </div>
     <div id="right">
     	<div id="content">
@@ -28,10 +28,7 @@ $userRow=mysql_fetch_array($res);
     </div>
 </div>
 
-<div id="body">
-	<a href="http://www.codingcage.com/">Coding Cage - Programming Blog</a><br /><br />
-    <p>Focuses on PHP, MySQL, Ajax, jQuery, Web Design and more...</p>
-</div>
+
 
 </body>
 </html>
